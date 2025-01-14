@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-icon img {
+    height: 30px;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cart-items {
+    flex: 0 0 70%;
+}
+
+.cart-totals {
+    flex: 0 0 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-items img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-items .item-info {
+    flex: 1;
+}
+
+.cart-items .item-info h4 {
+    margin-bottom: 5px;
+}
+
+.cart-items .item-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.cart-items .item-info .quantity {
+    width: 50px;
+}
+
+.cart-items .item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-items .item-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+
+.cart-totals p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.cart-totals button {
+    padding: 10px;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.footer {
+    background-color: #ebeb42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    }
+
+    .cart-items {
+        margin-bottom: 20px;
+    }
+}
