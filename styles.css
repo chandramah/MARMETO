@@ -80,7 +80,10 @@ body {
 .cart-items .item-info .quantity {
     width: 50px;
 }
-
+.image-container {
+            max-width: 800px;  /* Limit the maximum width of the image */
+            margin: 0 auto;    /* Center the container */
+        }
 .cart-items .item-actions {
     display: flex;
     align-items: center;
